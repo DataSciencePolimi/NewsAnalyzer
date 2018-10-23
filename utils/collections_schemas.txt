@@ -1,0 +1,125 @@
+USER
+{
+"_id": 11448,
+ "created_at": datetime.datetime(2006, 11, 4, 3, 17, 52),
+ "description": "I live in mahattan, I'm a dad, and I believe a person who refuses to try anything better is a person who will never make good things.",
+ "favourites_count": 29776,
+ "followers_count": 769,
+ "frame_total_count": 3100,
+ "frame_useful_count": 0,
+ "friends_count": 1330,
+ "fully_scraped": True,
+ "geo_enabled": True,
+ "lang": "en",
+ "location": "NYC",
+ "name": "Todd V",
+ "profile_image_url": "http://pbs.twimg.com/profile_images/485256605567836160/3Gotagx2_normal.jpeg",
+ "screen_name": "manhattanDAD",
+ "statuses_count": 14214,
+ "t_age": 49,
+ "t_eth": "WHITE",
+ "t_f_api": 4,
+ "t_gender": 2,
+ "url": None
+}
+
+TWEET
+{"RT": True,
+ "RT_entities": {"hashtags": [],
+                 "symbols": [],
+                 "urls": [{"display_url": "npr.org/sections/thetw…",
+                           "expanded_url": "https://www.npr.org/sections/thetwo-way/2018/05/22/611955569/scientists-take-a-ride-on-the-pacifics-shark-highway",
+                           "indices": [166, 189],
+                           "url": "https://t.co/DZDAXMvdP3"}],
+                 "user_mentions": []},
+ "RT_id": "999226327860482049",
+ "_id": "1000003957253586944",
+ "article": "64652d6f6e2d7468652d70616369666963732d736861726b2d68696768776179",
+ "coordinates": None,
+ "create_at": "2018-05-25 13:21:37",
+ "entities": {"hashtags": [],
+              "symbols": [],
+              "urls": [],
+              "user_mentions": [{"id": 43303934,
+                                 "id_str": "43303934",
+                                 "indices": [3, 16],
+                                 "name": "The Shark Trust",
+                                 "screen_name": "SharkTrustUK"}]},
+ "favourite_count": 0,
+ "id_user": "515784107",
+ "lang": "en",
+ "mentions": [{"id": 43303934,
+               "id_str": "43303934",
+               "indices": [3, 16],
+               "name": "The Shark Trust",
+               "screen_name": "SharkTrustUK"}],
+ "news_source": "npr",
+ "news_url": "https://www.npr.org/sections/thetwo-way/2018/05/22/611955569/scientists-take-a-ride-on-the-pacifics-shark-highway",
+ "retweet_count": 25,
+ "screen_name": "waittfdn",
+ "sentiment_polarity": 0.21428571428571427,
+ "sentiment_subjectivity": 0.42857142857142855,
+ "text": "RT @SharkTrustUK: The 500-mile-long "shark highway" in the Pacific "
+         "Ocean that acts as a \"continuous "swimway" for large marine "
+         "animals" fro…"}
+
+
+
+
+
+
+
+
+
+ARTICLE
+{"_id": "253230496e25323043617365253230596f752532304d69737365642532304974",
+ "authors": ["Chicago Tribune"],
+ "category": "entertainment",
+ "category_aggregate": "entertainment/art",
+ "ground_truth": True,
+ "keywords": ["pavilion",
+              "ramsey",
+              "sept",
+              "performance",
+              "photo",
+              "pritzker",
+              "fest",
+              "tribunemike",
+              "randolph",
+              "st",
+              "jazz",
+              "zuzu",
+              "chicago"],
+ "language": "en",
+ "pipelined": False,
+ "publish_date": "2018-08-30 00:00:00",
+ "scrape_date": "2018-09-03 13:08:47.224137",
+ "source": "http://www.chicagotribune.com",
+ "source_name": "Chicago Tribune",
+ "tags": [""],
+ "text": "Nuccio DiNuzzo / Chicago Tribune\n"
+         "\n"
+         "Mike Lubin, of Chicago, dance with his daughter Minerva Zuzu, 3 "
+         "during the performance by Ramsey Lewis, at the 40th Chicago Jazz "
+         "Festival, at the Pritzker Pavilion at 201 E. Randolph St., in "
+         "Millennium Park, in Chicago, on Sept. 1, 2018.",
+ "title": "Photos: Chicago Jazz Fest 2018",
+ "url": "http://www.chicagotribune.com/entertainment/music/ct-chicago-jazz-festival-2018-20180830-photogallery.html#nt=barker&bn=Barker%2006%20-%20In%20Case%20You%20Missed%20It"
+}
+
+
+SOURCE
+{"_id": ObjectId("5b61abe97e612663b00d2f48"),
+ "articles_limit": "True",
+ "brand": "wsj",
+ "domain": ["wsj.com"],
+ "gdpr_block": "False",
+ "html_category": "True",
+ "locality_state": "New York",
+ "name": "The Wall Street Journal",
+ "tags": "False",
+ "type": "newspaper",
+ "url_category": "False",
+ "url_category_position": "",
+ "url_subcategory": "False"
+}
