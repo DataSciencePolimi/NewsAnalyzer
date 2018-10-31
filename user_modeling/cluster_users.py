@@ -21,7 +21,6 @@ def get_republican_democratic_clusters(v_users):
 
     rep_keywords = ['#maga', '#kag', '#trump2020' '#americafirst', '#trumptrain', '#armyoftrump', '#votegop2018', '#backtheblue', '#redwaverising', '#trumpismypresident' ]
     dem_keywords = ['#bluewave', '#theresistance', '#votebluetosaveamerica', '#notmypresident', '#voteblue', '#uniteblue', '#nevertrump']
-    exrep_keywords = ['ex-gop', '#exgop']
 
     # extract democratic and republican users by hashtags in user description
     rep_users = []

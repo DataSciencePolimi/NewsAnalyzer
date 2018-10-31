@@ -260,6 +260,14 @@ def get_users_by_topic(ids, topic_stack, topid=0, topic_threshold=0.3):
     return users_by_topic
 
 
+def plot_distribution(data):
+    data = np.sort(data)
+    unique, counts = np.unique(data, return_counts=True)
+    plt.fill_between(unique, counts, alpha=0.4)
+    plt.plot(unique, counts)
+
+
+
 # id_list, t50, t100, t200 = users_by_category('science/technology/health', users, class_threshold=0.5)
 # scatter_by_sex(id_list, t200)
 # scatter_by_age(id_list, t200)

@@ -6,6 +6,8 @@ from gensim.models import LdaModel
 from gensim import corpora
 import numpy as np
 import pprint as pp
+import logging
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 """
     This script vectorize a user in the following spaces:
