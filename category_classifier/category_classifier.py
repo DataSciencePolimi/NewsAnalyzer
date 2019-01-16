@@ -6,12 +6,9 @@ from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix
-from sklearn.model_selection import cross_validate
-from sklearn.metrics import recall_score
-from sklearn.model_selection import cross_val_score
 import pickle
 import datetime
 import warnings

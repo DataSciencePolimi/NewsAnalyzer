@@ -2,7 +2,6 @@ import pymongo
 import json
 import requests
 import urllib
-import time
 
 yandex_url = 'https://geocode-maps.yandex.ru/1.x/?lang=en&format=json&'
 

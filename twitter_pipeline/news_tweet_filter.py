@@ -1,9 +1,6 @@
 from urllib.parse import urlparse
 from http import client
 import re
-import requests
-import json
-
 
 def unshorten_url(url, count=0):
     try:
