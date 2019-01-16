@@ -19,13 +19,13 @@ Clone the repository:
 
 `git clone https://github.com/DataSciencePolimi/NewsAnalyzer.git`
 
-Inside the SKE folder initialize a python environment
+Inside the project folder initialize a python environment
 
-`virtualenv ske-env`
+`virtualenv newsanalyzer-env`
 
 Activate it
 
-`source ske-env/bin/activate`
+`source newsanalyzer-env/bin/activate`
 
 The install the requirements
 
