@@ -51,7 +51,7 @@ Open `credential.json` and fill the values with your keys:
 3. Run `setup.py` script inside application folder
 
 
-### Run the pipeline
+### Running the pipeline
 
 In order to start collecting users, tweets and articles your database need to contain at least one article entity to feed the recursive pipeline. 
 
