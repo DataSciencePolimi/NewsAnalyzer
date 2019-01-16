@@ -1,6 +1,9 @@
 # NewsAnalyzer
 
 ## Intro
+This software tool allows to extract big collections of Twitter news-sharing *users*, their news *tweets* and the full data structure of the shared *articles*.
+
+The application is automatic and self-powered so that it can be run for indefinitely long sessions.
 
 ## Installation Guide
 
@@ -8,7 +11,6 @@
 - Python (>3.4.0) and pip
 - MongoDB
 - Twitter API keys
-- Python libs in requirements.txt
 - (optional) Face++ keys
 
 ### Setting up the application
