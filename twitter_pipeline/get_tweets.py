@@ -29,12 +29,13 @@ class ArticleThread(Thread):
         threadLock.release()
 
 
-def user_tweets_to_mongo(account, twitter, mongo, sources, N=3000):
+def user_tweets_to_mongo(account, twitter, mongo, sources, N=3000, ignore_duplicates=False):
     try:
-        if 'fully_scraped' in mongo.user.find_one({'screen_name': account}):
+        if not ignore_duplicates and 'fully_scraped' in mongo.user.find_one({'screen_name': account}):
             return {'total': 0, 'useful': 0}
     except:
         pass
+
     max_number = 3200
     max_per_request = 200
     languages = ['en']

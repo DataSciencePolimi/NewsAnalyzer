@@ -24,7 +24,7 @@ t_gender
 client = pymongo.MongoClient('localhost:27017')
 db = client.NewsAnalyzer
 
-fileKeys = open('../credentials/credentialsTwitter.json').read()
+fileKeys = open('../credentials.json').read()
 keys = json.loads(fileKeys)
 
 faceplusplusurldetect = "https://api-us.faceplusplus.com/facepp/v3/detect?api_key="+keys['faceplus_key']+"&api_secret="+keys['faceplus_secret']

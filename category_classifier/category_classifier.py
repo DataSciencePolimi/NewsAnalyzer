@@ -9,11 +9,13 @@ from sklearn import preprocessing
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import cross_validate
+from sklearn.metrics import recall_score
+from sklearn.model_selection import cross_val_score
 import pickle
 import datetime
 import warnings
 import logging
-import topic_modeling.preprocess_corpus as preprocessor
 warnings.simplefilter("ignore", DeprecationWarning)
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
