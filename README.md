@@ -46,7 +46,7 @@ Open `credential.json` and fill the values with your keys:
 
 ### Setting up database
 
-1. Download and install MongoDB `https://www.mongodb.com/`
+1. [Download and install MongoDB](https://www.mongodb.com/)
 2. Run command `mongod` to start a MongoDB server on localhost (may require priviledges)
 3. Run `setup.py` script inside application folder
 
@@ -55,7 +55,7 @@ Open `credential.json` and fill the values with your keys:
 
 In order to start collecting users, tweets and articles your database need to contain at least one article entity to feed the recursive pipeline. 
 
-You can run `utils/get_seeds.py` to get a set of initial seeds or you can download our pre-collected dataset at `https://doi.org/10.7910/DVN/5XRZLH`.
+You can run `utils/get_seeds.py` to get a set of initial seeds or you can download our [pre-collected dataset](https://doi.org/10.7910/DVN/5XRZLH).
 
 Then run `main_pipeline.py`
 
