@@ -48,7 +48,8 @@ Open `credential.json` and fill the values with your keys:
 
 1. Download the NewsAnalyzer dataset from `https://doi.org/10.7910/DVN/5XRZLH` and unzip
 2. Run command `mongod` to start a MongoDB server on localhost
-3. While in the dataset folder, run the following command to import data:
-   `mongoimport --db NewsAnalyzer --collection`
+3. Run `setup.py` script inside application folder
+
+
 
 
