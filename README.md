@@ -33,6 +33,8 @@ The install the requirements
 
 ### Setting up keystore
 
+If you don't have yet, obtain [Twitter API credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
+
 Open `credential.json` and fill the values with your keys:
 
 ```
