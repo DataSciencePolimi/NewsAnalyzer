@@ -96,3 +96,17 @@ def get_consolidated_category(raw_category, db):
         return category_row['category']
     else:
         return None
+
+
+def get_aggregated_category(category):
+    if category in ['national', 'local']:
+        return 'national/local'
+    elif category in ['entertainment', 'art']:
+        return 'entertainment/art'
+    elif category in ['science', 'technology', 'health']:
+        return 'science/technology/health'
+    elif category in ['style', 'food', 'travel']:
+        return 'style/food/travel'
+    else:
+        return category
+

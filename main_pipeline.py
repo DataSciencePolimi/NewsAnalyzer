@@ -13,8 +13,8 @@ sys.path.append("/data")
 # Parameters
 PIPE_ITERATIONS = 100
 ART_PER_CATEGORY = 10
-MAX_USERS = 100
-MAX_TWEETS = 500
+MAX_USERS_BY_NEWS = 100
+MAX_TWEETS_BY_USER = 500
 
 
 """
@@ -55,9 +55,7 @@ def main():
         categories = ['world', 'politics', 'business', 'sports', 'entertainment/art', 'national/local',
                       'style/food/travel', 'science/technology/health']
         for c in categories:
-            sample = list(db.articles.aggregate([{"$match": {"category_aggregate": c, "pipelined": False,
-                                                             "ground_truth": True,
-                                                             'source_name': {'$nin': ['The Guardian', 'BBC', 'USA Today', 'CBC News']} }},
+            sample = list(db.articles.aggregate([{"$match": {"category_aggregate": c, "pipelined": False}},
                                                  {"$sample": {"size": ART_PER_CATEGORY}}]))
             articles.extend(sample)
 
@@ -70,7 +68,7 @@ def main():
             print('Processing article: ' + news_url)
             # 1
             # extract sharing user names from url
-            user_names = news_extractor.get_users_from_news(news_url, twitter, MAX_USERS-1)
+            user_names = news_extractor.get_users_from_news(news_url, twitter, MAX_USERS_BY_NEWS - 1)
             if len(user_names) == 0:
                 db.articles.update({"_id": art["_id"]}, {"$set": {"pipelined": True}})
                 print('No users found. Skip article.')
@@ -95,10 +93,9 @@ def main():
             print('Extracting tweets...')
             tw_total = 0
             tw_useful = 0
-            file_sources = open('utils/sources.json').read()
-            sources = json.loads(file_sources)
+            sources = list(db.sources.find())
             for u in user_names:
-                count = get_tweets.user_tweets_to_mongo(u, twitter, db, sources, MAX_TWEETS)
+                count = get_tweets.user_tweets_to_mongo(u, twitter, db, sources, MAX_TWEETS_BY_USER)
                 tw_total = tw_total + count['total']
                 tw_useful = tw_useful + count['useful']
                 print('| ' + u + ' useful tweets: ' + str(count['useful']) + ' / ' + str(count['total']))
